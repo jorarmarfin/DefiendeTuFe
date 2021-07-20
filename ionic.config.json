@@ -1,0 +1,7 @@
+{
+  "name": "CitasBiblicas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

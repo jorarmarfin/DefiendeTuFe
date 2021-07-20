@@ -1,0 +1,13 @@
+<app-header Titulo="Desarrollo del tema"></app-header>
+
+<ion-content>
+<ion-card *ngFor="let item of desarrollo">
+    <ion-card-header>
+        <ion-card-subtitle>{{ item.resumen }}</ion-card-subtitle>
+        <ion-card-title>{{ item.cita }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <p [innerHTML]="item.texto"></p>
+    </ion-card-content>
+</ion-card>
+</ion-content>

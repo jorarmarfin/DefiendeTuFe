@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Defiende tu Fe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar debounce="500" placeholder="Escoger tema"></ion-searchbar>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item detail *ngFor="let item of temas" (click)="verTema(item.tema)">
+          <ion-label>{{ item.tema }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
